@@ -21,18 +21,6 @@ function setup() {
 function modelLoaded() {
     console.log("Model is loaded");
     status = true;
-
-    objectDetector.detect(img, gotResults);
-}
-
-function gotResults(error, results) {
-    if (error) {
-        console.log(error);
-
-    } else {
-        console.log(results);
-        objects = results;
-    }
 }
 
 function draw() {
